@@ -45,7 +45,7 @@
 
             <form class="d-flex" role="search">
               <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+              <button class="btn btn-outline-success search" type="submit" id="submit">Search</button>
             </form>
 
           </div>
@@ -142,7 +142,7 @@
                     <th style="width: 34%;">Min_temp</th>
                     <th style="width: 34%;">Sunrise</th>
                     <th style="width: 34%;">Sunset</th>
-                    <th style="width: 34%;">Temp</th>
+                    <th style="width: 34%;">Wind_temp</th>
                     <!-- <th style="width: 34%;">Wind_degrees</th> -->
                     <th style="width: 34%;">Wind_speed</th>
 
@@ -151,84 +151,78 @@
                 <tbody>
                   <tr>
                     <th scope="row" class="text-start">Ayodhya</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>5</td>
+                    <td id="cloud_pctAyodhya">45</td>
+                    <td id="feels_Ayodhya">29</td>
+                    <td id="ayodgya_humidity">34</td>
+                    <td id="ayodgya_max">49</td>
+                    <td id="ayodgya_min">53</td>
+                    <td id="ayodgya_sunrise">1344657241</td>
+                    <td id="ayodgya_set">1344657566</td>
+                    <td id="ayodgya_temp">233</td>
+                    <td id="ayodhya_wind">6.32</td>                    
                   </tr>
                   <tr>
                     <th scope="row" class="text-start">Dwarka</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>5</td>
+                    <td id="cloud_pctdwarka">27</td>
+                    <td id="feels_dwarka">23</td>
+                    <td id="Dwarka_humidity">39</td>
+                    <td id="Dwarka_max">44</td>
+                    <td id="Dwarka_min">59</td>
+                    <td id="Dwarka_sunrise">1946788996</td>
+                    <td id="Dwarka_set">1878906544</td>
+                    <td id="Dwarka_temp">237</td>
+                    <td id="Dwarka_wind">7.17</td>
                   </tr>
                 </tbody>
         
                 <tbody>
                   <tr>
                     <th scope="row" class="text-start">Ujjain</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>5</td>
+                    <td id="cloud_pctujjain">31</td>
+                    <td id="feels_ujjain">29</td>
+                    <td id="ujjain_humidity">35</td>
+                    <td id="ujjain_max">43</td>
+                    <td id="ujjain_min">55</td>
+                    <td id="ujjain_sunrise">1346788996</td>
+                    <td id="ujjain_set">1578906544</td>
+                    <td id="ujjain_temp">235</td>
+                    <td id="ujjain_wind">7.11</td>
                   </tr>
                   <tr>
                     <th scope="row" class="text-start">Haridwar</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>5</td>
+                    <td id="cloud_pctHaridwar">18</td>
+                    <td id="feels_Haridwar">24</td>
+                    <td id="Haridwar_humidity">39</td>
+                    <td id="Haridwar_max">49</td>
+                    <td id="Haridwar_min">57</td>
+                    <td id="Haridwar_sunrise">1946788996</td>
+                    <td id="Haridwar_set">1678906544</td>
+                    <td id="Haridwar_temp">295</td>
+                    <td id="Haridwar_wind">7.19</td>
                   </tr>
                   <tr>
                     <th scope="row" class="text-start">Varanasi</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>5</td>
+                    <td id="cloud_pctVaranasi">11</td>
+                    <td id="feels_Varanasi">20</td>
+                    <td id="Varanasi_humidity">35</td>
+                    <td id="Varanasi_max">47</td>
+                    <td id="Varanasi_min">58</td>
+                    <td id="Varanasi_sunrise">1946788991</td>
+                    <td id="Varanasi_set">1678906544</td>
+                    <td id="Varanasi_temp">296</td>
+                    <td id="Varanasi_wind">7.99</td>
                   </tr>
                   <tr>
                     <th scope="row" class="text-start">Mathura</th>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>3</td>
-                    <td>4</td>
-                    <td>5</td>
-                    <td>9</td>
-                    <td>8</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>5</td>
+                    <td id="cloud_pctMathura">17</td>
+                    <td id="feels_Mathura">23</td>
+                    <td id="Mathura_humidity">36</td>
+                    <td id="Mathura_max">46</td>
+                    <td id="Mathura_min">57</td>
+                    <td id="Mathura_sunrise">1846788991</td>
+                    <td id="Mathura_set">1778906544</td>
+                    <td id="Mathura_temp">290</td>
+                    <td id="Mathura_wind">7.89</td>
                   </tr>
                 </tbody>
               </table>
